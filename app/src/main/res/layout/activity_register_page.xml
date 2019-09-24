@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <EditText
+        android:id="@+id/eREmail"
+        android:layout_width="228dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <EditText
+        android:id="@+id/eRPassword"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="none|textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eREmail" />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/colorPrimary"
+        android:text="Sign Up!"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eRPassword" />
+
+    <TextView
+        android:id="@+id/textRSignin"
+        android:layout_width="166dp"
+        android:layout_height="28dp"
+        android:text="Sign In Here!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignup"
+        app:layout_constraintVertical_bias="0.49" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
